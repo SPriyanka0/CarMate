@@ -1,0 +1,15 @@
+body{
+    padding: 50px;
+    background-color: #202A44;
+    color: whitesmoke;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.form-group{
+    margin-bottom: 30px;
+}
+
