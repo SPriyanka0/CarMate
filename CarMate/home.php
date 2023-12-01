@@ -10,7 +10,7 @@ if(!isset($_SESSION["user"])){ //if not login then redirect to login page
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Car Mate</title>
 </head>
 <body>
@@ -20,7 +20,7 @@ if(!isset($_SESSION["user"])){ //if not login then redirect to login page
     <nav>
         <ul>
             <!-- <li><a href="signup.html">Sign Up</a></li> -->
-            <li><a href="home.html">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <!-- logout -->
             <li><a href=logout.php class="btn btn-warning">Logout</a></li>
         </ul>
@@ -57,13 +57,13 @@ if(!isset($_SESSION["user"])){ //if not login then redirect to login page
         </div>
     </section>
     <section class="icons">
-        <a href="home.html"><img src="home-icon.png" alt="Home"></a>
-        <a href="live.chat.html"><img src="chat-icon.png" alt="Live Chat"></a>
-        <a href="map.html"><img src="map-icon.png" alt="Local Map"></a>
-        <a href="form.html"><img src="profile-icon.png" alt="Profile"></a>
+        <a href="home.php"><img src="photos/home-icon.png" alt="Home"></a>
+        <a href="liveChat.html"><img src="photos/chat-icon.png" alt="Live Chat"></a>
+        <a href="map.html"><img src="photos/map-icon.png" alt="Local Map"></a>
+        <a href="form.html"><img src="photos/profile-icon.png" alt="Profile"></a>
     </section>
     <footer>
-        <p>&copy; 2023 Car Mate</p>
+        <p>&copy; 2023 CarMate</p>
     </footer>
 </body>
 </html>
