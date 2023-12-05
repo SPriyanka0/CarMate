@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <!--Include Leaflet CSS file in the head section of your document:-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <!--Include Leaflet JavaScript file after Leaflet’s CSS:-->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <!--css style-->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #map { 
+            height: 480px; 
+        }
+    </style>
+ 
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Car Mate Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>  
+    <script src="leafletMap.js"></script>
+        <div id="map">
+        </div>
+        <section class="icons">
+            <a href="home.html"><img src="home-icon.png" alt="Home"></a>
+            <a href="#"><img src="chat-icon.png" alt="Live Chat"></a>
+            <a href="map.html"><img src="map-icon.png" alt="Local Map"></a>
+            <a href="form.html"><img src="profile-icon.png" alt="Profile"></a>
+        </section>
+        <footer>
+            <p>&copy; 2023 Car Mate</p>
+        </footer>
+</body>
+</html>
