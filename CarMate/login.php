@@ -58,6 +58,10 @@ if(isset($_SESSION["user"])){ //if not login then redirect to login page
         </form>
         <div>
             <p>Not registered? <a href="register.php">SignUp!</a></p>
+            <!-- admin -->
+            <p>Admin <a href="register.php">Login</a></p> 
+            <!-- dashboard -->
+            <p>Dashboard <a href="register.php">Login</a></p>
              </div>
     </div>
 </head>

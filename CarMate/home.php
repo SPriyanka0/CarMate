@@ -23,6 +23,7 @@ if(!isset($_SESSION["user"])){ //if not login then redirect to login page
             <li><a href="home.php">Home</a></li>
             <!-- logout -->
             <li><a href=logout.php class="btn btn-warning">Logout</a></li>
+            <li><a href=edit.php class="btn btn-primary">Edit Profile</a></li>
         </ul>
     </nav>
     <section class="content">
@@ -58,7 +59,7 @@ if(!isset($_SESSION["user"])){ //if not login then redirect to login page
     </section>
     <section class="icons">
         <a href="home.php"><img src="photos/home-icon.png" alt="Home"></a>
-        <a href="liveChat.html"><img src="photos/chat-icon.png" alt="Live Chat"></a>
+        <a href="liveChat.php"><img src="photos/chat-icon.png" alt="Live Chat"></a>
         <a href="map.html"><img src="photos/map-icon.png" alt="Local Map"></a>
         <a href="form.html"><img src="photos/profile-icon.png" alt="Profile"></a>
     </section>
