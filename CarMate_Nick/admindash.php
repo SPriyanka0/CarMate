@@ -3,7 +3,7 @@ include 'database.php';
 // Check if admin is not logged in
 if(isset($_SESSION["admin"])) {
     // If not logged in, redirect to login page
-    header("Location: login.php");
+    header("Location: admin_login.php");
     die();
 }
 

@@ -19,7 +19,7 @@ if(!$con){
   <body>
     
   <div class="container">
-        <button class="btn btn-primary my-5"><a href="admindash.php" class="text-light">Add user</a></button>
+        <button class="btn btn-primary my-5"><a href="dashboard.php" class="text-light">Add user</a></button>
         <table class="table table-hover table-dark">
             <thead>
                 <tr>
