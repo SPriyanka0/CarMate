@@ -68,19 +68,7 @@ include 'database.php';
 
                 ?>
         <div class="events">
-        <h2>Local Racers</h2>
-        <div class="racers">
-            <div class="racer">
-                <h3>John Doe</h3>
-                <p>Car: Chevrolet Camaro</p>
-                <p>Description: Looking for challengers for a drag race this weekend!</p>
-            </div>
-            <div class="racer">
-                <h3>Jane Smith</h3>
-                <p>Car: Ford Mustang</p>
-                <p>Description: Ready for some friendly drag racing competitions. Let's race!</p>
-            </div>
-        </div>
+        
     </section>
    
 </html>

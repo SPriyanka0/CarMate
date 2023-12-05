@@ -33,7 +33,7 @@ if(isset($_SESSION["user"])){ //if not login then redirect to login page
                     //only if login can go to homepage
                     session_start();
                     $_SESSION["user"] = "yes"; 
-                    header("Location: home.php"); //redirects to homepage
+                    header("Location: display.php"); //redirects to homepage
                     die();
                 }else{
                     echo "<div class='alert alert-danger'>Incorrect Password.</div>";

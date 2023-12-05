@@ -33,7 +33,7 @@ if(isset($_SESSION["user"])){ //if not login then redirect to login page
                     //only if login can go to homepage
                     session_start();
                     $_SESSION["user"] = "yes"; 
-                    header("Location: home.php"); //redirects to homepage
+                    header("Location: user_home.php"); //redirects to homepage
                     die();
                 }else{
                     echo "<div class='alert alert-danger'>Incorrect Password.</div>";
@@ -58,6 +58,8 @@ if(isset($_SESSION["user"])){ //if not login then redirect to login page
         </form>
         <div>
             <p>Not registered? <a href="register.php">SignUp!</a></p>
+            <p>Admin <a href="admindash.php">Login</a></p>
+            <p>Dragstrip <a href="dragstrip_login.php">Login</a></p>
              </div>
     </div>
 </head>
