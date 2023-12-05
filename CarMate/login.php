@@ -27,6 +27,15 @@ if(isset($_SESSION["user"])){ //if not login then redirect to login page
             $result = mysqli_query($conn,$sql); //returns an object and to acess with $user
             $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
             //if returns data then email exists and is true...else false
+            
+            if($email === 'admin@example.com' && password_verify($password, $user["password"])){
+                //admin login success
+                session_start();
+                $_SESSION["admin"] = "yes";
+                header("Location: display.php"); //redirect to admin homepage
+                die();
+            }
+            
             if($user){
                 //email matches but check if password associated with email is correct
                 if(password_verify($password, $user["password"])){
@@ -47,13 +56,13 @@ if(isset($_SESSION["user"])){ //if not login then redirect to login page
         <h1>Car Mate Login</h1>
         <form action="login.php" method="post">
             <div class="form-group">
-                <input type="email" placeholder="Email:" name="email" class="form-control">
+                <input type="email" placeholder="Email:" name="email" autocomplete = off class="form-control">
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Password:" name="password" class="form-control">
+                <input type="password" placeholder="Password:" name="password" autocomplete = off class="form-control">
             </div>
             <div class="form-btn">
-                <input type="submit" value="Login" name="login" class="btn btn-primary">
+                <input type="submit" value="Login" name="login" autocomplete = off class="btn btn-primary">
             </div>
         </form>
         <div>
